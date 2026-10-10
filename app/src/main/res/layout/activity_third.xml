@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_third"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ThirdActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экран 3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Switch
+            android:id="@+id/switchToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Переключатель настроек"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад к Экрану 2 (свайп вправо)" />
+
+    </LinearLayout>
+</ScrollView>

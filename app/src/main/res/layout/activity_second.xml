@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экран 2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вариант А" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вариант Б" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="К Экрану 3 (свайп влево)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад к Экрану 1 (свайп вправо)" />
+
+    </LinearLayout>
+</ScrollView>
